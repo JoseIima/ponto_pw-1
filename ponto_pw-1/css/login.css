@@ -1,0 +1,57 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #cceeff, #ffffff); /* Gradiente suave de azul claro a branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* Aplicando a fonte Roboto */
+    font-size: 2rem; /* Tamanho da fonte */
+    color: #4CAF50; /* Cor verde */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px; /* Espaço acima e abaixo do label */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

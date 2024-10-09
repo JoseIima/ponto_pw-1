@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bater Ponto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bater Ponto</h1>
+        <div id="currentDateTime">
+            <div id="currentDate"></div>
+            <div id="currentTime"></div>
+        </div>
+        <button id="punchButton" class="action-button">Bater Ponto</button>
+        <button id="goToReports" class="reportButton">Relatórios</button>
+    </div>
+    
+    <div id="overlay">
+        <div id="overlayContent">
+            <div id="closeButton">X</div>
+            <div id="overlayDateTime"></div>
+        
+            <!-- Campo para Nome do Funcionário -->
+            <input type="text" id="employeeName" placeholder="Nome Completo">
+            
+            <!-- Campo para RA do Funcionário -->
+            <input type="text" id="employeeRA" placeholder="RA do Funcionário">
+        
+            <!-- Dropdown para selecionar a ação -->
+            <select id="actionSelect">
+                <option value="">Selecione uma ação</option>
+                <option value="Entrada">Entrada</option>
+                <option value="Intervalo">Intervalo</option>
+                <option value="Volta do Intervalo">Volta do Intervalo</option>
+                <option value="Saída">Saída</option>
+            </select>
+       
+            <input type="date" id="entryDate" required>
+            <input type="time" id="entryTime" required>
+
+            <!-- Botão para confirmar o envio -->
+            <button id="confirmButton" class="action-button">Confirmar</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

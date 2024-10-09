@@ -1,0 +1,124 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#filterInput {
+    width: 300px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+#goToHome {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #2196F3;
+}
+
+#goToHome:hover {
+    background-color: #0b7dda;
+}
+
+/* Adição da parte de Overlay */
+.overlay {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Sobrepõe outros elementos */
+}
+
+.overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+.overlay-content h2 {
+    margin-top: 0;
+}
+
+.overlay input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.overlay button {
+    padding: 10px 15px;
+    margin: 10px 5px;
+}
+
+.overlay button:hover {
+    background-color: #45a049;
+}
+
+/* Botão de cancelar no overlay */
+#cancelEditButton {
+    background-color: #f44336;
+}
+
+#cancelEditButton:hover {
+    background-color: #e41f1f;
+}
+
+/* Estilos para o botão de cancelar no overlay de filtro */
+#cancelFilterButton {
+    background-color: #f44336;
+}
+
+#cancelFilterButton:hover {
+    background-color: #e41f1f;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios</title>
+    <link rel="stylesheet" href="css/relatorio.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Relatórios</h1>
+        <input type="text" id="filterInput" placeholder="Filtrar registros">
+        <button id="filterButton">Filtrar</button>
+        
+        <table id="recordsTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>RA</th>
+                    <th>Ação</th>
+                    <th>Data</th>
+                    <th>Arquivo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="reportBody">
+                <!-- Os registros serão inseridos aqui -->
+            </tbody>
+        </table>
+        
+        <button id="goToHome" class="reportButton">Voltar para Bater Ponto</button>
+    </div>
+
+    <!-- Overlay para edição -->
+    <div id="editOverlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Editar Registro</h2>
+            <label for="editName">Nome:</label>
+            <input type="text" id="editName" required>
+            
+            <label for="editRA">RA:</label>
+            <input type="text" id="editRA" required>
+            
+            <label for="editAction">Ação:</label>
+            <input type="text" id="editAction" required>
+            
+            <label for="editDate">Data:</label>
+            <input type="date" id="editDate" required>
+            
+            <button id="saveEditButton">Salvar Alterações</button>
+            <button id="cancelEditButton">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- Overlay para filtrar registros -->
+    <div id="filterOverlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Filtrar Registros</h2>
+            <label for="filterType">Escolha o tipo de filtro:</label>
+            <select id="filterType">
+                <option value="name">Nome</option>
+                <option value="ra">RA</option>
+                <option value="date">Data</option>
+            </select>
+            <label for="filterValue">Valor do filtro:</label>
+            <input type="text" id="filterValue" placeholder="Digite o valor para filtrar">
+            <button id="applyFilterButton">Aplicar Filtro</button>
+            <button id="cancelFilterButton">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="js/relatorio.js"></script>
+</body>
+</html>
